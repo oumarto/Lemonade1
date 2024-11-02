@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Texte d'instructions -->
+    <TextView
+        android:id="@+id/text_instructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/tap_lemon_tree"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Image principale qui change en fonction de l'étape -->
+    <ImageView
+        android:id="@+id/image_lemonade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_instructions"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/lemon_tree"
+        android:src="@drawable/lemon_tree" />
+</RelativeLayout>
